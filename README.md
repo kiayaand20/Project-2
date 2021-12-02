@@ -6,7 +6,7 @@
 
 ## Project Description
 
-<em>Whatever the Weather</em> is an application that allows users to view fun activity ideas in each season. The user can select a season on the homepage, which will direct them to another page populated with activity names, activity images, and a brief desciption. The user will also be allotted the opportunity to leave a comment describing their favorite seasonal activity. Each comment can be updated and/or deleted.
+<em>Whatever the Weather</em> is an application that allows users to view fun activity ideas based on the season. The user can select a season on the homepage, which will direct them to another page populated with activity names, an image, and a brief description. The user will also be allotted the opportunity to leave a comment describing their favorite seasonal activity. Each comment can be updated and/or deleted.
 
 ## Wireframes
 
@@ -32,8 +32,8 @@
 
 ### MVP
 
-- Utilize Airtable to build usable database.
-- Use Axios to consume data from Airtable, and GET/render that data in components.
+- Utilize Airtable to build a usable database.
+- Utilize Axios to consume data from Airtable, and GET/render that data in components.
 - Establish home page with clickable season icons that allows users to select an option and get corresponding activity ideas.
 - Allow users to complete a form concerning their favorite activities that can be rendered on the page/updated on Airtable.
 
@@ -80,7 +80,7 @@
 
 ### Strengths:
 
-I am wholly aware of the direction I want to go in terms of functionality and styling of the application.
+I am wholly aware of the direction I want to go in terms of functionality. This will come in handy when setting up the core apllication structure and styling of the application.
 
 ### Weaknesses:
 
