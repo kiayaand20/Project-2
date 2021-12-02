@@ -48,7 +48,7 @@
 
 ### PostMVP
 
-- Create and implement second table in Airtable and render in application.
+- Create and implement a third table in Airtable and render in application.
 - Addition of filter options for users.
 
 ## Project Schedule
@@ -68,8 +68,8 @@
 
 | Component                             | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Wireframes/Priority Matrix/Timeframes |    H     |      3hrs      |      hrs      |     hrs     |
-| Airtable Database                     |    H     |      2hrs      |      hrs      |     hrs     |
+| Wireframes/Priority Matrix/Timeframes |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Airtable Database                     |    H     |      2hrs      |    2.15hrs    |   2.15hrs   |
 | Core Application Setup                |    H     |      3hrs      |      hrs      |     hrs     |
 | Component Setup                       |    H     |      3hrs      |      hrs      |     hrs     |
 | Clickable Icons (Home page)           |    H     |      2hrs      |      hrs      |     hrs     |
