@@ -29,7 +29,7 @@
   "id": "recxWkmdzkhqJAENI",
   "fields": {
     "Activity": "Visit a Pumpkin Patch",
-    "Season": "Fall",
+    "Season": "Autumn",
     "Description": "Pumpkin patches are fun because they often have hayrides, a corn maze, and/or a petting zoo in addition to pumpkins.",
     "Image": "https://res.cloudinary.com/kacloud20/image/upload/v1638456840/Project%202/pumpkin-patch-2873348_640_ocdu0n.jpg"
   },
