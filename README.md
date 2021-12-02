@@ -25,7 +25,16 @@
 ## API and Data Sample
 
 ```json
-
+{
+  "id": "recxWkmdzkhqJAENI",
+  "fields": {
+    "Activity": "Visit a Pumpkin Patch",
+    "Season": "Fall",
+    "Description": "Pumpkin patches are fun because they often have hayrides, a corn maze, and/or a petting zoo in addition to pumpkins.",
+    "Image": "https://res.cloudinary.com/kacloud20/image/upload/v1638456840/Project%202/pumpkin-patch-2873348_640_ocdu0n.jpg"
+  },
+  "createdTime": "2021-12-02T03:32:49.000Z"
+}
 ```
 
 ## MVP/PostMVP
@@ -80,7 +89,7 @@
 
 ### Strengths:
 
-I am wholly aware of the direction I want to go in terms of functionality. This will come in handy when setting up the core apllication structure and styling of the application.
+I am wholly aware of the direction I want to go in terms of functionality. This will come in handy when setting up the core application structure and styling of the application.
 
 ### Weaknesses:
 
@@ -92,4 +101,4 @@ This project will allow me the opportunity to strengthen my working knowledge of
 
 ### Threats:
 
-Although I have a clear vision of what needs to be done, it will be vital to monitor the designated timeframes for each task. This will ensure the project stays on track for completion, based on the project schedule, and allow time to ask for assistance if needed.
+Although I have a clear vision of what needs to be done, it will be vital to monitor the designated timeframes for each task. This will ensure the project stays on track for completion, and allow time to ask for assistance if needed.
