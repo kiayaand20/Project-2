@@ -11,15 +11,18 @@
 ## Wireframes
 
 ![wireframes](https://res.cloudinary.com/kacloud20/image/upload/v1638419450/Project%202/wireframe1_c2oor5.png)
-url: https://res.cloudinary.com/kacloud20/image/upload/v1638419450/Project%202/wireframe1_c2oor5.png
+https://res.cloudinary.com/kacloud20/image/upload/v1638419450/Project%202/wireframe1_c2oor5.png
 ![wireframes](https://res.cloudinary.com/kacloud20/image/upload/v1638419472/Project%202/wireframe2_dwp9sc.png)
-url: https://res.cloudinary.com/kacloud20/image/upload/v1638419472/Project%202/wireframe2_dwp9sc.png
+https://res.cloudinary.com/kacloud20/image/upload/v1638419472/Project%202/wireframe2_dwp9sc.png
 ![wireframes](https://res.cloudinary.com/kacloud20/image/upload/v1638419389/Project%202/mobile_wireframe1_i5mk1k.png)
-url: https://res.cloudinary.com/kacloud20/image/upload/v1638419389/Project%202/mobile_wireframe1_i5mk1k.png
+https://res.cloudinary.com/kacloud20/image/upload/v1638419389/Project%202/mobile_wireframe1_i5mk1k.png
 ![wireframes](https://res.cloudinary.com/kacloud20/image/upload/v1638419428/Project%202/mobile_wireframe2_cotygt.png)
-url: https://res.cloudinary.com/kacloud20/image/upload/v1638419428/Project%202/mobile_wireframe2_cotygt.png
+https://res.cloudinary.com/kacloud20/image/upload/v1638419428/Project%202/mobile_wireframe2_cotygt.png
 
 ## Component Hierarchy
+
+![wireframe](https://res.cloudinary.com/kacloud20/image/upload/v1638422834/Project%202/comp_hierarchy_twmlmk.png)
+https://res.cloudinary.com/kacloud20/image/upload/v1638422834/Project%202/comp_hierarchy_twmlmk.png
 
 ## API and Data Sample
 
@@ -33,7 +36,8 @@ url: https://res.cloudinary.com/kacloud20/image/upload/v1638419428/Project%202/m
 
 - Utilize Airtable to build usable database.
 - Use Axios to consume data from Airtable, and GET/render that data in components.
--
+- Establish home page with clickable season icons that allows users to select an option and get corresponding activity ideas.
+- Allow users to complete a form concerning their favorite activities that can be rendered on the page/updated on Airtable.
 
 ### PostMVP
 
@@ -42,32 +46,52 @@ url: https://res.cloudinary.com/kacloud20/image/upload/v1638419428/Project%202/m
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
-
-| Day        | Deliverable                                              | Status     |
-| ---------- | -------------------------------------------------------- | ---------- |
-| Dec 1      | Wireframes/Priority Matrix/Timeframes                    | Incomplete |
-| Dec 2-3    | Airtable Setup/Core Application Structure                | Incomplete |
-| Dec 4      | Core Application Structure Completion/Component Creation | Incomplete |
-| Dec 5      | Pseudocode / actual code                                 | Incomplete |
-| Dec 6      | Initial Clickable Model                                  | Incomplete |
-| December 8 | MVP                                                      | Incomplete |
-| December 9 | Presentation                                             | Incomplete |
+| Day     | Deliverable                                              | Status     |
+| ------- | -------------------------------------------------------- | ---------- |
+| Dec 1   | Wireframes/Priority Matrix/Timeframes                    | Incomplete |
+| Dec 2-3 | Airtable Setup/Core Application Structure                | Incomplete |
+| Dec 4   | Core Application Structure Completion/Component Creation | Incomplete |
+| Dec 5   | Pseudocode / Actual code                                 | Incomplete |
+| Dec 6   | Coding cont./Initial Clickable Model                     | Incomplete |
+| Dec 7   | MVP/Styling                                              | Incomplete |
+| Dec 8   | Styling cont./Final Application Review                   | Incomplete |
+| Dec 9   | Presentation                                             | Incomplete |
 
 ## Timeframes
 
-| Component        | Priority | Estimated Time | Time Invested | Actual Time |
-| ---------------- | :------: | :------------: | :-----------: | :---------: |
-| Adding Form      |    H     |      3hrs      |    3.5hrs     |   3.5hrs    |
-| Working with API |    H     |      3hrs      |    2.5hrs     |   2.5hrs    |
-| Total            |    H     |      6hrs      |     5hrs      |    5hrs     |
+| Component                             | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Wireframes/Priority Matrix/Timeframes |    H     |      3hrs      |      hrs      |     hrs     |
+| Airtable Database                     |    H     |      2hrs      |      hrs      |     hrs     |
+| Core Application Setup                |    H     |      3hrs      |      hrs      |     hrs     |
+| Component Setup                       |    H     |      3hrs      |      hrs      |     hrs     |
+| Clickable Icons (Home page)           |    H     |      2hrs      |      hrs      |     hrs     |
+| Buttons                               |    M     |     1.5hrs     |      hrs      |     hrs     |
+| Working with Images                   |    M     |      3hrs      |      hrs      |     hrs     |
+| Data Rendering                        |    H     |      3hrs      |      hrs      |     hrs     |
+| Form Creation                         |    H     |      3hrs      |      hrs      |     hrs     |
+| Header Styling                        |    M     |     1.5hrs     |      hrs      |     hrs     |
+| Footer Styling                        |    M     |     1.5hrs     |      hrs      |     hrs     |
+| Media Queries                         |    H     |     1.5hrs     |      hrs      |     hrs     |
+| CSS Formatting                        |    M     |      3hrs      |      hrs      |     hrs     |
+| Testing/Debugging                     |    H     |      3hrs      |      hrs      |     hrs     |
+| Pseudocode                            |    M     |      3hrs      |      hrs      |     hrs     |
+| Total                                 |    H     |     34hrs      |      hrs      |     hrs     |
 
 ## SWOT Analysis
 
 ### Strengths:
 
+I am wholly aware of the direction I want to go in terms of functionality and styling of the application.
+
 ### Weaknesses:
+
+I am not completely comfortable with Linking and/or Routing pages. Therefore, I have identified various resources that can be referenced as guidance in case I need support.
 
 ### Opportunities:
 
+This project will allow me the opportunity to strengthen my working knowledge of React. Similarly, this project will allow me to further push my abilities with creating an app with attractive styling and usability.
+
 ### Threats:
+
+Although I have a clear vision of what needs to be done, it will be vital to monitor the designated timeframes for each task. This will ensure the project stays on track for completion, based on the project schedule, and allow time to ask for assistance if needed.
