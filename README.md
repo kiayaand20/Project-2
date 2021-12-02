@@ -11,18 +11,16 @@
 ## Wireframes
 
 ![wireframes](https://res.cloudinary.com/kacloud20/image/upload/v1638419450/Project%202/wireframe1_c2oor5.png)
-https://res.cloudinary.com/kacloud20/image/upload/v1638419450/Project%202/wireframe1_c2oor5.png
+
 ![wireframes](https://res.cloudinary.com/kacloud20/image/upload/v1638419472/Project%202/wireframe2_dwp9sc.png)
-https://res.cloudinary.com/kacloud20/image/upload/v1638419472/Project%202/wireframe2_dwp9sc.png
+
 ![wireframes](https://res.cloudinary.com/kacloud20/image/upload/v1638419389/Project%202/mobile_wireframe1_i5mk1k.png)
-https://res.cloudinary.com/kacloud20/image/upload/v1638419389/Project%202/mobile_wireframe1_i5mk1k.png
+
 ![wireframes](https://res.cloudinary.com/kacloud20/image/upload/v1638419428/Project%202/mobile_wireframe2_cotygt.png)
-https://res.cloudinary.com/kacloud20/image/upload/v1638419428/Project%202/mobile_wireframe2_cotygt.png
 
 ## Component Hierarchy
 
 ![wireframe](https://res.cloudinary.com/kacloud20/image/upload/v1638422834/Project%202/comp_hierarchy_twmlmk.png)
-https://res.cloudinary.com/kacloud20/image/upload/v1638422834/Project%202/comp_hierarchy_twmlmk.png
 
 ## API and Data Sample
 
@@ -76,7 +74,7 @@ https://res.cloudinary.com/kacloud20/image/upload/v1638422834/Project%202/comp_h
 | CSS Formatting                        |    M     |      3hrs      |      hrs      |     hrs     |
 | Testing/Debugging                     |    H     |      3hrs      |      hrs      |     hrs     |
 | Pseudocode                            |    M     |      3hrs      |      hrs      |     hrs     |
-| Total                                 |    H     |     34hrs      |      hrs      |     hrs     |
+| Total                                 |    H     |     37hrs      |      hrs      |     hrs     |
 
 ## SWOT Analysis
 
