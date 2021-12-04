@@ -33,6 +33,8 @@ function App() {
           element={
             <div>
               <h1>Whatever the Weather</h1>
+              <h4>Fun Activity Ideas for every Season</h4>
+              <h2> Select a Season below to explore your options:</h2>
               <Link to="/activity/spring">
                 <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638395378/Project%202/tulips-2254970__340_y49jwa.jpg"
                   alt="flowers" /></Link>

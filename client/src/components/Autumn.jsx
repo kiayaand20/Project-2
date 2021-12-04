@@ -1,14 +1,34 @@
+import React from 'react';
+import Card from '@mui/material/Card';
+import CardHeader from '@mui/material/CardHeader';
+import CardMedia from '@mui/material/CardMedia';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+// Resource for making cards from Material UI: 
+// https://www.pluralsight.com/guides/styling-a-react-app-with-material-ui
+
 function Autumn(props) {
   return (
     <div>
-      <h1>AUTUMN</h1>
+      <h1>Autumn Activities</h1>
       {
         props.activity.map((activity) => (
           activity.fields.season === "Autumn" ?
             <>
-              <h3 key={activity.id}>{activity.fields.activity}</h3>
-              <img src={activity.fields.image} alt="activity" />
-              <h3>{activity.fields.description}</h3>
+              <Card sx={{ maxWidth: 300 }}>
+                <CardHeader title={activity.fields.activity} />
+                <CardMedia
+                  component="img"
+                  height="194"
+                  image={activity.fields.image}
+                  alt="activity"
+                />
+                <CardContent>
+                  <Typography variant="body2" color="text.secondary">
+                    {activity.fields.description}
+                  </Typography>
+                </CardContent>
+              </Card>
             </>
             :
             null

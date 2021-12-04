@@ -1,7 +1,7 @@
 function Winter(props) {
   return (
     <div>
-      <h1>WINTER</h1>
+      <h1>Winter Activities</h1>
       {
         props.activity.map((activity) => (
           activity.fields.season === "Winter" ?

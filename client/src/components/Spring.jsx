@@ -1,7 +1,7 @@
 function Spring(props) {
   return (
     <div>
-      <h1>SPRING</h1>
+      <h1>Spring Activities</h1>
       {
         props.activity.map((activity) => (
           activity.fields.season === "Spring" ?

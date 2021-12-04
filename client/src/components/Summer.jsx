@@ -1,7 +1,7 @@
 function Summer(props) {
   return (
     <div>
-      <h1>SUMMER</h1>
+      <h1>Summer Activities</h1>
       {
         props.activity.map((activity) => (
           activity.fields.season === "Summer" ?
