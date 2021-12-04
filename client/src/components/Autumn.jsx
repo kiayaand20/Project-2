@@ -4,7 +4,7 @@ import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-// Resource for making cards from Material UI: 
+// Resource for making cards with Material UI: 
 // https://www.pluralsight.com/guides/styling-a-react-app-with-material-ui
 
 function Autumn(props) {
