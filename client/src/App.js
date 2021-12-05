@@ -35,18 +35,21 @@ function App() {
               <h1>Whatever the Weather</h1>
               <h4>Fun Activity Ideas for every Season</h4>
               <h2> Select a Season below to explore your options:</h2>
-              <Link to="/activity/spring">
-                <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638395378/Project%202/tulips-2254970__340_y49jwa.jpg"
-                  alt="flowers" /></Link>
-              <Link to="/activity/summer">
-                <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638397011/Project%202/beach-84560__340_k5m5tn.jpg"
-                alt="beach" /></Link>
-              <Link to="/activity/autumn">
-                <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638395238/Project%202/autumn-1649362__340_jaffmi.jpg"
-                alt="leaves" /></Link>
-              <Link to="/activity/winter">
-                <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638395167/Project%202/snow-5852352__340_gibdio.jpg"
-                alt="snow" /></Link>
+                  <Link to="/activity/spring">
+                    <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638664794/Project%202/SPRING_hs8e4n.png"
+                    alt="flowers" className="spring-img"/></Link>
+                     
+                  <Link to="/activity/summer">
+                    <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638664895/Project%202/SUMMER_pctvg0.png"
+                    alt="beach" /></Link>
+
+                  <Link to="/activity/autumn">
+                    <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638664346/Project%202/AUTUMN_vqvakf.png"
+                    alt="leaves" /></Link>
+              
+                  <Link to="/activity/winter">
+                    <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638664702/Project%202/WINTER_ui00xd.png"
+                    alt="snow" /></Link>
             </div>
           }
         />
