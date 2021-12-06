@@ -1,3 +1,11 @@
+/* .header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 5px;
+  background-color: rgb(250, 240, 227);
+} */
+
 h1,
 h2,
 h4 {
@@ -19,4 +27,29 @@ h4 {
 
 h5 {
   text-align: right;
+}
+
+.autumn-form {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  padding: 5px 0 10px;
+  font-weight: 700;
+  border-top: 3px solid #12130f; */
 }

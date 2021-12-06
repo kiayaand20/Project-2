@@ -11,6 +11,8 @@ function Autumn(props) {
   return (
     <div>
       <h1>Autumn Activities</h1>
+      <h3 className="autumn-form"> Have an Autumn activity idea you think 
+              others will enjoy? Add it to the list! </h3>
         {
           props.activity.map((activity) => (
             activity.fields.season === "Autumn" ?
@@ -18,7 +20,7 @@ function Autumn(props) {
                 maxWidth: 350,
                 height: 375,
                 display: 'inline-block',
-                margin: '20px'
+                margin: '20px',
               }}
               >
                 <CardHeader title={activity.fields.activity} />

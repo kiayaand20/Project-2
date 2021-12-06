@@ -1,57 +1,42 @@
 import { useState, useEffect } from 'react'
-import { postComment, editComment } from '../services'
+import { postActivity } from '../services'
 import { useNavigate, useParams } from 'react-router-dom'
 
 export default function Form(props) {
-  const [name, setName] = useState('')
   const [activity, setActivity] = useState('')
-  const [comment, setComment] = useState('')
+  const [description, setDescription] = useState('')
+  const [image, setImage] = useState('')
   const navigate = useNavigate()
   const params = useParams()
 
   useEffect(() => {
-    if (props.comments) {
-      const searchComments = props.comments.find(comments=> {
-        return comments.id === params.id
+    if (props.activity) {
+      const searchActivity= props.activity.find(activity=> {
+        return activity.id === params.id
       })
-      if (searchComments) {
-        setName(searchComments.fields.title)
-        setActivity(searchComments.fields.activity)
-        setComment(searchComments.fields.comment)
+      if (searchActivity) {
+        setActivity(searchActivity.fields.activity)
+        setImage(searchActivity.fields.image)
+        setDescription(searchActivity.fields.description)
       }
     }
-  }, [params.id, props.comments])
+  }, [params.id, props.activity])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const newComment = {
-      name,
+    const newActivity = {
       activity,
-      comment
-    }
-    if (props.books) {
-      const res = await editComment(newComment, params.id)
-      props.setToggle(prevToggle => !prevToggle)
-      if (res) {
-        navigate(`/autumn/${params.id}`)
-      }
-    } else {
-      const res = await postComment(newComment)
-      props.setToggle(prevToggle => !prevToggle)
-      if (res) {
-        navigate(`/activity/autumn`)
-      }
+      image,
+      description
     }
 
-  }
+    await postActivity(newActivity)
+    props.setToggle(prevToggle => !prevToggle)
+      navigate(`/activity/add`)
+}
+    
   return (
     <form className="form" onSubmit={handleSubmit}>
-      <input
-        type='text'
-        value={name}
-        name='name'
-        onChange={(e) => setName(e.target.value)}
-      />
       <input
         type='text'
         value={activity}
@@ -60,11 +45,17 @@ export default function Form(props) {
       />
       <input
         type='text'
-        value={comment}
-        name='comment'
-        onChange={(e) => setComment(e.target.value)}
+        value={image}
+        name='image'
+        onChange={(e) => setImage(e.target.value)}
+      />
+      <input
+        type='text'
+        value={description}
+        name='description'
+        onChange={(e) => setDescription(e.target.value)}
       />
       <button>Submit</button>
-    </form>
+      </form>
   )
 }

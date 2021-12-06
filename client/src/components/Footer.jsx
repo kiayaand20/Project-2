@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <div>
+      <div className="footer">
         <h4 className="footer-name">&copy; Kiaya Anderson</h4>
         {/* <a href="http://github.com">
           <img className="github" src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png" alt="GitHub"

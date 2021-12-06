@@ -2,7 +2,7 @@ import './App.css';
 import { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
-import { grabActivity, grabComment } from './services'
+import { grabActivity } from './services'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Autumn from './components/Autumn'
@@ -13,7 +13,6 @@ import Form from './components/Form'
 
 function App() {
   const [activity, setActivity] = useState([])
-  const [comments, setComments] = useState([])
   const [toggle, setToggle] = useState(false)
 
   useEffect(() => {
@@ -24,24 +23,16 @@ function App() {
     getActivity();
   }, [toggle])
 
-  useEffect(() => {
-    const getComments = async () => {
-      const res = await grabComment()
-      setComments(res)
-    }
-    getComments();
-  }, [toggle])
-
   return (
     <div>
-      <Header/>
+      <Header />
       <Routes>
         <Route
           path='/'
           element={
             <div>
-              <h1>Whatever the Weather</h1>
-              <h4>Fun Activity Ideas for every Season</h4>
+              <h1 className="title">Whatever the Weather</h1>
+              <h4 className="mini-title">Fun Activity Ideas for every Season</h4>
               <h2> Select a Season below to explore your options:</h2>
                 <div className="home-imgs">
                   <Link to="/activity/spring">
@@ -71,15 +62,13 @@ function App() {
           element={<Summer activity={activity} setToggle={setToggle}/>} />
         <Route
           path="/activity/autumn"
-          element={<Autumn activity={activity} setToggle={setToggle}/>} />
+          element={<Autumn activity={activity} setToggle={setToggle} />} />
         <Route
           path="/activity/winter"
           element={<Winter activity={activity} setToggle={setToggle} />} />
-        
-        <Route
-          path="/autumn/:id"
-          element={<Form comments={comments} setToggle={setToggle} />} />
       </Routes>
+
+      <Form activity={activity} setToggle={setToggle} />
       <Footer />
     </div>
   );
