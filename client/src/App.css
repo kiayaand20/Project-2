@@ -30,7 +30,9 @@ h5 {
 }
 
 .autumn-form,
-.spring-form {
+.spring-form,
+.summer-form,
+.winter-form {
   display: flex;
   justify-content: center;
 }
