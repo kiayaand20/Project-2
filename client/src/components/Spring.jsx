@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 function Spring(props) {
   return (
     <div>
+      <h1>Spring Activities</h1>
       {
         props.activity.map((activity) => (
           activity.fields.season === "Spring" ?
@@ -16,7 +17,7 @@ function Spring(props) {
                 maxWidth: 350,
                 height: 375,
                 display: 'inline-block',
-                margin: '20px'
+                margin: '20px',
               }}>
                 <CardHeader title={activity.fields.activity} />
                 <CardMedia

@@ -43,12 +43,13 @@ function App() {
               <h1>Whatever the Weather</h1>
               <h4>Fun Activity Ideas for every Season</h4>
               <h2> Select a Season below to explore your options:</h2>
+                <div className="home-imgs">
                   <Link to="/activity/spring">
-                    <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638664794/Project%202/SPRING_hs8e4n.png"
-                    alt="flowers" className="spring-img"/></Link>
+                    <img src="https://res.cloudinary.com/kacloud20/image/upload/c_scale,h_340,w_480/v1638766866/Project%202/SPRING_1_t7y2r4.png"
+                    alt="flowers" /></Link>
 
                   <Link to="/activity/summer">
-                    <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638664895/Project%202/SUMMER_pctvg0.png"
+                    <img src="https://res.cloudinary.com/kacloud20/image/upload/c_scale,h_340,w_480/v1638766861/Project%202/SUMMER_1_f0xl59.png"
                     alt="beach" /></Link>
 
                   <Link to="/activity/autumn">
@@ -56,8 +57,9 @@ function App() {
                     alt="leaves" /></Link>
 
                   <Link to="/activity/winter">
-                    <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638664702/Project%202/WINTER_ui00xd.png"
+                    <img src="https://res.cloudinary.com/kacloud20/image/upload/c_scale,h_340,w_480/v1638766869/Project%202/WINTER_1_nwdpfy.png"
                     alt="snow" /></Link>
+                </div>
             </div>
           }
         />
