@@ -2,18 +2,18 @@ import './App.css';
 import { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
-import { grabActivity } from './services'
+import { grabActivity, grabComment } from './services'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Autumn from './components/Autumn'
 import Winter from './components/Winter'
 import Spring from './components/Spring'
 import Summer from './components/Summer'
-// import Form from './components/Form'
+import Form from './components/Form'
 
 function App() {
   const [activity, setActivity] = useState([])
-  // const [comments, setComments] = useState('')
+  const [comments, setComments] = useState([])
   const [toggle, setToggle] = useState(false)
 
   useEffect(() => {
@@ -24,9 +24,17 @@ function App() {
     getActivity();
   }, [toggle])
 
+  useEffect(() => {
+    const getComments = async () => {
+      const res = await grabComment()
+      setComments(res)
+    }
+    getComments();
+  }, [toggle])
+
   return (
     <div>
-      <Header />
+      <Header/>
       <Routes>
         <Route
           path='/'
@@ -38,7 +46,7 @@ function App() {
                   <Link to="/activity/spring">
                     <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638664794/Project%202/SPRING_hs8e4n.png"
                     alt="flowers" className="spring-img"/></Link>
-                     
+
                   <Link to="/activity/summer">
                     <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638664895/Project%202/SUMMER_pctvg0.png"
                     alt="beach" /></Link>
@@ -46,7 +54,7 @@ function App() {
                   <Link to="/activity/autumn">
                     <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638664346/Project%202/AUTUMN_vqvakf.png"
                     alt="leaves" /></Link>
-              
+
                   <Link to="/activity/winter">
                     <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638664702/Project%202/WINTER_ui00xd.png"
                     alt="snow" /></Link>
@@ -64,7 +72,11 @@ function App() {
           element={<Autumn activity={activity} setToggle={setToggle}/>} />
         <Route
           path="/activity/winter"
-          element={<Winter activity={activity} setToggle={setToggle}/>} />
+          element={<Winter activity={activity} setToggle={setToggle} />} />
+        
+        <Route
+          path="/autumn/:id"
+          element={<Form comments={comments} setToggle={setToggle} />} />
       </Routes>
       <Footer />
     </div>

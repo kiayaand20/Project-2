@@ -11,11 +11,15 @@ function Autumn(props) {
   return (
     <div>
       <h1>Autumn Activities</h1>
-      {
-        props.activity.map((activity) => (
-          activity.fields.season === "Autumn" ?
-            <>
-              <Card sx={{ maxWidth: 300 }}>
+        {
+          props.activity.map((activity) => (
+            activity.fields.season === "Autumn" ?
+              <Card sx={{
+                maxWidth: 350,
+                display: 'inline-block',
+                margin: '20px'
+              }}
+              >
                 <CardHeader title={activity.fields.activity} />
                 <CardMedia
                   component="img"
@@ -29,11 +33,9 @@ function Autumn(props) {
                   </Typography>
                 </CardContent>
               </Card>
-            </>
-            :
-            null
-        ))
-      }
+              :
+              null
+          ))}
     </div>
   )
 }
