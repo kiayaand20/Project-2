@@ -16,6 +16,7 @@ function Autumn(props) {
             activity.fields.season === "Autumn" ?
               <Card sx={{
                 maxWidth: 350,
+                height: 375,
                 display: 'inline-block',
                 margin: '20px'
               }}

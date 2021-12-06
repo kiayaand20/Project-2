@@ -13,7 +13,12 @@ function Winter(props) {
         props.activity.map((activity) => (
           activity.fields.season === "Winter" ?
             <>
-              <Card sx={{ maxWidth: 300 }}>
+              <Card sx={{
+                maxWidth: 350,
+                height: 375,
+                display: 'inline-block',
+                margin: '20px'
+              }}>
                 <CardHeader title={activity.fields.activity} />
                 <CardMedia
                   component="img"
