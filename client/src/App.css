@@ -29,7 +29,8 @@ h5 {
   text-align: right;
 }
 
-.autumn-form {
+.autumn-form,
+.spring-form {
   display: flex;
   justify-content: center;
 }

@@ -4,6 +4,7 @@ import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import Grid from '@material-ui/core/Grid';
 // Resource for making cards with Material UI: 
 // https://www.pluralsight.com/guides/styling-a-react-app-with-material-ui
 
@@ -12,10 +13,19 @@ function Autumn(props) {
     <div>
       <h1>Autumn Activities</h1>
       <h3 className="autumn-form"> Have an Autumn activity idea you think 
-              others will enjoy? Add it to the list! </h3>
-        {
-          props.activity.map((activity) => (
-            activity.fields.season === "Autumn" ?
+        others will enjoy? Add it to the list! </h3>
+        <Grid container 
+            spacing={0}
+            direction="row"
+            alignItems="center"
+            justify="center"
+            style={{ minHeight: '100vh' }}
+              >
+          {
+            props.activity.map((activity) => (
+              activity.fields.season === "Autumn" ?
+            
+            <Grid item>
               <Card sx={{
                 maxWidth: 350,
                 height: 375,
@@ -23,24 +33,27 @@ function Autumn(props) {
                 margin: '20px',
               }}
               >
-                <CardHeader title={activity.fields.activity} />
-                <CardMedia
-                  component="img"
-                  height="194"
-                  image={activity.fields.image}
-                  alt="activity"
+              <CardHeader title={activity.fields.activity} />
+              <CardMedia
+                component="img"
+                height="194"
+                image={activity.fields.image}
+                alt="activity"
                 />
-                <CardContent>
-                  <Typography variant="body2" color="text.secondary">
-                    {activity.fields.description}
-                  </Typography>
-                </CardContent>
+              <CardContent>
+              <Typography variant="body2" color="text.secondary">
+                {activity.fields.description}
+              </Typography>
+              </CardContent>
               </Card>
+            </Grid>
               :
               null
           ))}
+        </Grid>
     </div>
   )
+            
 }
 
 export default Autumn;

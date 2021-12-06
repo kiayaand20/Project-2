@@ -31,9 +31,9 @@ function App() {
           path='/'
           element={
             <div>
-              <h1 className="title">Whatever the Weather</h1>
+              {/* <h1 className="title">Whatever the Weather</h1>
               <h4 className="mini-title">Fun Activity Ideas for every Season</h4>
-              <h2> Select a Season below to explore your options:</h2>
+              <h2> Select a Season below to explore your options:</h2> */}
                 <div className="home-imgs">
                   <Link to="/activity/spring">
                     <img src="https://res.cloudinary.com/kacloud20/image/upload/c_scale,h_340,w_480/v1638766866/Project%202/SPRING_1_t7y2r4.png"
@@ -66,9 +66,13 @@ function App() {
         <Route
           path="/activity/winter"
           element={<Winter activity={activity} setToggle={setToggle} />} />
-      </Routes>
 
-      <Form activity={activity} setToggle={setToggle} />
+        <Route
+          path="/activity/add"
+          element={<Form activity={activity} setToggle={setToggle} />}
+        />
+
+      </Routes>
       <Footer />
     </div>
   );

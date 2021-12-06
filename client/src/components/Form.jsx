@@ -3,6 +3,7 @@ import { postActivity } from '../services'
 import { useNavigate, useParams } from 'react-router-dom'
 
 export default function Form(props) {
+  const [season, setSeason] = useState('')
   const [activity, setActivity] = useState('')
   const [description, setDescription] = useState('')
   const [image, setImage] = useState('')
@@ -25,6 +26,7 @@ export default function Form(props) {
   const handleSubmit = async (e) => {
     e.preventDefault()
     const newActivity = {
+      season,
       activity,
       image,
       description
@@ -32,11 +34,33 @@ export default function Form(props) {
 
     await postActivity(newActivity)
     props.setToggle(prevToggle => !prevToggle)
-      navigate(`/activity/add`)
+      navigate(`/`)
 }
     
   return (
     <form className="form" onSubmit={handleSubmit}>
+      <select onChange={(e) => setSeason(e.target.value)}>
+        <option disabled selected>
+          Please select a Season
+        </option>
+        
+        <option value='Autumn'>
+          Autumn
+        </option>
+        
+        <option value='Spring'>
+          Spring
+        </option>
+        
+        <option value='Summer'>
+          Summer
+        </option>
+        
+        <option value='Winter'>
+          Winter
+        </option>
+      </select>
+
       <input
         type='text'
         value={activity}
@@ -56,6 +80,6 @@ export default function Form(props) {
         onChange={(e) => setDescription(e.target.value)}
       />
       <button>Submit</button>
-      </form>
+    </form>
   )
 }
