@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect} from 'react'
 import { postActivity } from '../services'
 import { useNavigate, useParams } from 'react-router-dom'
 
@@ -8,20 +8,14 @@ export default function Form(props) {
   const [description, setDescription] = useState('')
   const [image, setImage] = useState('')
   const navigate = useNavigate()
-  const params = useParams()
+  const {seasons} = useParams()
 
   useEffect(() => {
-    if (props.activity) {
-      const searchActivity= props.activity.find(activity=> {
-        return activity.id === params.id
+      const searchSeason= props.activity.find(activity=> {
+        return activity.fields.season === seasons
       })
-      if (searchActivity) {
-        setActivity(searchActivity.fields.activity)
-        setImage(searchActivity.fields.image)
-        setDescription(searchActivity.fields.description)
-      }
-    }
-  }, [params.id, props.activity])
+    setSeason(searchSeason)
+  }, [seasons, props.activity])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -34,7 +28,7 @@ export default function Form(props) {
 
     await postActivity(newActivity)
     props.setToggle(prevToggle => !prevToggle)
-      navigate(`/`)
+      navigate(`/activity/${season}`)
 }
     
   return (
@@ -44,7 +38,7 @@ export default function Form(props) {
     <form className="form" onSubmit={handleSubmit}>
       <select onChange={(e) => setSeason(e.target.value)}>
         <option disabled selected>
-          Please select a Season
+          Select a Season
         </option>
         
         <option value='Autumn'>

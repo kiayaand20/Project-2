@@ -9,9 +9,9 @@ import Grid from '@material-ui/core/Grid';
 function Summer(props) {
   return (
     <div>
-      <h1>Summer Activities</h1>
-      <h3 className="summer-form"> Have an activity idea you think 
-        others will enjoy? Add it to the list! </h3>
+      <label>Summer Activities</label>
+      <label className="summer-form"> Have an activity idea you think 
+        others will enjoy? Add it to the list! </label>
         <Grid container 
             spacing={0}
             direction="row"
