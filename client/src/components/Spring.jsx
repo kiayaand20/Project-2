@@ -11,9 +11,10 @@ function Spring(props) {
   return (
     <div>
       <h1>Spring Activities</h1>
-      <h3 className="spring-form"> Have an activity idea you think 
-        others will enjoy?</h3>
-        <Link to='/activity/add' style={{ textDecoration: 'none'}}>Add it to the list!</Link>
+      <Link to='/activity/add' style={{ textDecoration: 'none', color: 'black' }}>
+        <h3 className="add-link"> Have an activity idea you think
+          others will enjoy? Add it to the list!</h3>
+      </Link>
         <Grid container 
             spacing={0}
             direction="row"

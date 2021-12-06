@@ -38,6 +38,9 @@ export default function Form(props) {
 }
     
   return (
+    <div>
+      <h1>Let's create an Activity!</h1>
+      <h3>Complete the form below:</h3>
     <form className="form" onSubmit={handleSubmit}>
       <select onChange={(e) => setSeason(e.target.value)}>
         <option disabled selected>
@@ -80,6 +83,7 @@ export default function Form(props) {
         onChange={(e) => setDescription(e.target.value)}
       />
       <button>Submit</button>
-    </form>
+      </form>
+    </div>
   )
 }
