@@ -9,10 +9,10 @@ import {Link} from 'react-router-dom'
 // Resource for making cards with Material UI: 
 // https://www.pluralsight.com/guides/styling-a-react-app-with-material-ui
 
-function Autumn(props) {
+function Fall(props) {
   return (
     <div>
-      <label className="pg-titles">Autumn Activities</label>
+      <label className="pg-titles">Fall Activities</label>
       <br />
       <label className="pg-sentence"> <em>Have an activity idea you think
           others will enjoy? </em></label>
@@ -29,7 +29,7 @@ function Autumn(props) {
               >
           {
             props.activity.map((activity) => (
-              activity.fields.season === "Autumn" ?
+              activity.fields.season === "Fall" ?
             
             <Grid item key={activity.id}>
               <Card sx={{
@@ -62,4 +62,4 @@ function Autumn(props) {
             
 }
 
-export default Autumn;
+export default Fall;

@@ -41,8 +41,8 @@ export default function Form(props) {
           Select a Season
         </option>
         
-        <option value='Autumn'>
-          Autumn
+        <option value='Fall'>
+          Fall
         </option>
         
         <option value='Spring'>

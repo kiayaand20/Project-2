@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom'
 import { grabActivity } from './services'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Autumn from './components/Autumn'
+import Fall from './components/Fall'
 import Winter from './components/Winter'
 import Spring from './components/Spring'
 import Summer from './components/Summer'
@@ -42,8 +42,8 @@ function App() {
           path="/activity/summer"
           element={<Summer activity={activity} setToggle={setToggle}/>} />
         <Route
-          path="/activity/autumn"
-          element={<Autumn activity={activity} setToggle={setToggle} />} />
+          path="/activity/fall"
+          element={<Fall activity={activity} setToggle={setToggle} />} />
         <Route
           path="/activity/winter"
           element={<Winter activity={activity} setToggle={setToggle} />} />

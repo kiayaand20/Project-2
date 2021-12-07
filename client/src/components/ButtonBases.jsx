@@ -7,6 +7,12 @@ import Typography from '@mui/material/Typography';
 
 const images = [
   {
+    url: 'https://res.cloudinary.com/kacloud20/image/upload/v1638887664/Project%202/snow_lmjxdw.webp',
+    title: 'WINTER',
+    width: '50%',
+    season: "winter"
+  },
+  {
     url: 'https://res.cloudinary.com/kacloud20/image/upload/v1638826053/Project%202/test_z0wh65.jpg',
     title: 'SPRING',
     width: '50%',
@@ -20,15 +26,9 @@ const images = [
   },
   {
     url: 'https://res.cloudinary.com/kacloud20/image/upload/v1638887666/Project%202/leaves_tpd6xk.webp',
-    title: 'AUTUMN',
+    title: 'FALL',
     width: '50%',
-    season: "autumn"
-  },
-  {
-    url: 'https://res.cloudinary.com/kacloud20/image/upload/v1638887664/Project%202/snow_lmjxdw.webp',
-    title: 'WINTER',
-    width: '50%',
-    season: "winter"
+    season: "fall"
   },
 ];
 
@@ -100,7 +100,8 @@ export default function ButtonBases() {
   return (
     <div>
       <label className="home-intro"> Whatever the Weather provides a variety
-        of activity ideas for every season. <br /> In other words, fun for the
+        of activity ideas for every season.</label>
+      <label className="home-intro2"> In other words, FUN for the
         entire year!</label>
       <br />
       <label className="selection">Start by selecting a season below:
