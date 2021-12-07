@@ -34,7 +34,7 @@ const images = [
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
-  height: 200,
+  height: 300,
   [theme.breakpoints.down('sm')]: {
     width: '100% !important', 
     height: 200,
@@ -98,7 +98,15 @@ const ImageMarked = styled('span')(({ theme }) => ({
 
 export default function ButtonBases() {
   return (
-    <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
+    <div>
+      <label className="home-intro"> Whatever the Weather provides a variety
+        of activity ideas for every season. <br /> In other words, fun for the
+        entire year!</label>
+      <br />
+      <label className="selection">Start by selecting a season below:
+      </label>
+      <br />
+      <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
       {images.map((image) => (
         
         <ImageButton
@@ -131,36 +139,8 @@ export default function ButtonBases() {
           </ImageButton>
         
       ))}
-    </Box>
+      </Box>
+    </div>
   );
 }
-
-
-
-
-// function Activity() {
-//   return (
-//     <div className="home-imgs">
-//     <Link to="/activity/spring">
-//       <img src="https://res.cloudinary.com/kacloud20/image/upload/c_scale,h_340,w_480/v1638766866/Project%202/SPRING_1_t7y2r4.png"
-//       alt="flowers" /></Link>
-
-//     <Link to="/activity/summer">
-//       <img src="https://res.cloudinary.com/kacloud20/image/upload/c_scale,h_340,w_480/v1638766861/Project%202/SUMMER_1_f0xl59.png"
-//       alt="beach" /></Link>
-
-//     <Link to="/activity/autumn">
-//       <img src="https://res.cloudinary.com/kacloud20/image/upload/v1638664346/Project%202/AUTUMN_vqvakf.png"
-//       alt="leaves" /></Link>
-
-//     <Link to="/activity/winter">
-//       <img src="https://res.cloudinary.com/kacloud20/image/upload/c_scale,h_340,w_480/v1638766869/Project%202/WINTER_1_nwdpfy.png"
-//       alt="snow" /></Link>
-//     </div>
-  
-//   )
-// }
-
-// export default Activity;
-
 

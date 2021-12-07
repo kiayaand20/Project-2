@@ -11,6 +11,7 @@
   background-color: rgb(206, 250, 247);
   font-family: "Roboto", sans-serif;
 }
+
 .home {
   text-decoration: none;
   font-weight: 400;
@@ -24,6 +25,13 @@
   font-weight: 100;
   font-size: 40px;
 }
+
+/* .home-content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+/* align-items: center;
+} */
 
 h1,
 h2,
@@ -77,6 +85,20 @@ h5 {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 300;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-weight: bold;
 }
 
 .form {

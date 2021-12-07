@@ -5,10 +5,10 @@ function Header(props) {
       <div className="header">
         <Link to='/' className="home">Home</Link>
       <label className="title">Whatever the Weather</label>
-      <label className="home-intro"> Whatever the Weather provides a variety
+      {/* <label className="home-intro"> Whatever the Weather provides a variety
         of activity ideas for every season. In other words, fun for the
         entire year! Start your adventure by choosing a season below.
-      </label>
+      </label> */}
       </div>
   )
 }
