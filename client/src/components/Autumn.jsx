@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Grid from '@material-ui/core/Grid';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 // Resource for making cards with Material UI: 
 // https://www.pluralsight.com/guides/styling-a-react-app-with-material-ui
 
@@ -26,8 +26,8 @@ function Autumn(props) {
             alignItems="center"
             justifyContent="center"
             style={{ minHeight: '100vh' }}
-              >
-          {
+        >
+          {props.activity.fields && 
             props.activity.map((activity) => (
               activity.fields.season === "Autumn" ?
             
@@ -47,7 +47,7 @@ function Autumn(props) {
                 alt="activity"
                 />
               <CardContent>
-              <Typography  color="black">
+              <Typography variant="body2" color="black" >
                 {activity.fields.description}
               </Typography>
               </CardContent>
@@ -61,5 +61,4 @@ function Autumn(props) {
   )
             
 }
-
 export default Autumn;
