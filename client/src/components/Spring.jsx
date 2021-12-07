@@ -42,7 +42,7 @@ function Spring(props) {
                 alt="activity"
                 />
               <CardContent>
-              <Typography variant="body2" color="black">
+              <Typography variant="body2" color="black" >
                 {activity.fields.description}
               </Typography>
               </CardContent>

@@ -1,7 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react'
-import {Link} from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { grabActivity } from './services'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -9,9 +9,8 @@ import Autumn from './components/Autumn'
 import Winter from './components/Winter'
 import Spring from './components/Spring'
 import Summer from './components/Summer'
-import Activity from './components/Activity'
+import ButtonBases from './components/ButtonBases'
 import Form from './components/Form'
-import { useParams } from 'react-router-dom'
 
 function App() {
   const [activity, setActivity] = useState([])
@@ -30,9 +29,9 @@ function App() {
     <div>
       <Header />
       <Routes>
-      <Route
+        <Route
           path="/"
-          element={<Activity />} />
+          element={<ButtonBases />} />
         <Route
           path="/activity/:seasons"
           element={`<${seasons} />`} />
@@ -48,12 +47,9 @@ function App() {
         <Route
           path="/activity/winter"
           element={<Winter activity={activity} setToggle={setToggle} />} />
-
         <Route
           path="/activity/add"
-          element={<Form activity={activity} setToggle={setToggle} />}
-        />
-
+          element={<Form activity={activity} setToggle={setToggle} />} />
       </Routes>
       <Footer />
     </div>
