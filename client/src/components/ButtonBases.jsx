@@ -9,23 +9,26 @@ const images = [
   {
     url: 'https://res.cloudinary.com/kacloud20/image/upload/v1638826053/Project%202/test_z0wh65.jpg',
     title: 'SPRING',
-    width: '50%', 
+    width: '50%',
+    season: "spring"
   },
-  
   {
     url: 'https://res.cloudinary.com/kacloud20/image/upload/v1638887664/Project%202/palm_ersz3g.webp',
     title: 'SUMMER',
     width: '50%',
+    season: "summer"
   },
   {
     url: 'https://res.cloudinary.com/kacloud20/image/upload/v1638887666/Project%202/leaves_tpd6xk.webp',
     title: 'AUTUMN',
     width: '50%',
+    season: "autumn"
   },
   {
     url: 'https://res.cloudinary.com/kacloud20/image/upload/v1638887664/Project%202/snow_lmjxdw.webp',
     title: 'WINTER',
     width: '50%',
+    season: "winter"
   },
 ];
 
@@ -97,15 +100,17 @@ export default function ButtonBases() {
   return (
     <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
       {images.map((image) => (
+        
         <ImageButton
           focusRipple
           key={image.title}
           style={{
             width: image.width,
           }}
-        >
+          >
           <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
           <ImageBackdrop className="MuiImageBackdrop-root" />
+          <Link to={`/activity/${image.season}`}>
           <Image>
             <Typography
               component="span"
@@ -122,7 +127,9 @@ export default function ButtonBases() {
               <ImageMarked className="MuiImageMarked-root" />
             </Typography>
           </Image>
-        </ImageButton>
+          </Link>
+          </ImageButton>
+        
       ))}
     </Box>
   );
@@ -150,17 +157,7 @@ export default function ButtonBases() {
 //       <img src="https://res.cloudinary.com/kacloud20/image/upload/c_scale,h_340,w_480/v1638766869/Project%202/WINTER_1_nwdpfy.png"
 //       alt="snow" /></Link>
 //     </div>
-    
-
-
-
-
-
-
-
-
-
-
+  
 //   )
 // }
 
