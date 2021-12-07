@@ -27,7 +27,9 @@ function App() {
 
   return (
     <div>
-      <Header />
+      <div className="header-main">
+        <Header />
+      </div>
       <Routes>
         <Route
           path="/"

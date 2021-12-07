@@ -19,6 +19,7 @@ function Autumn(props) {
       <Link to='/activity/add' style={{  textDecoration: 'underline', color: 'black' }}> 
           <label className="add-link">Click here to add it to the list!</label>
       </Link>
+      <br />
         <Grid container 
             spacing={0}
             direction="row"
