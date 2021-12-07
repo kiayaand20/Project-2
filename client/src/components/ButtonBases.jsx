@@ -34,7 +34,7 @@ const images = [
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
-  height: 300,
+  height: 250,
   [theme.breakpoints.down('sm')]: {
     width: '100% !important', 
     height: 200,
@@ -65,14 +65,15 @@ const ImageSrc = styled('span')({
 
 const Image = styled('span')(({ theme }) => ({
   position: 'absolute',
-  left: 0,
-  right: 0,
-  top: 0,
-  bottom: 0,
+  left: 10,
+  right: 10,
+  top: 10,
+  bottom: 10,
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   color: theme.palette.common.white,
+  borderStyle: 'solid',
 }));
 
 const ImageBackdrop = styled('span')(({ theme }) => ({
@@ -124,7 +125,7 @@ export default function ButtonBases() {
             <Typography
               component="span"
               variant="subtitle1"
-                color="inherit"
+              color="inherit"
               sx={{
                 position: 'relative',
                 p: 4,

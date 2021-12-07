@@ -2,6 +2,7 @@
   min-height: 400px;
   margin-bottom: 100px;
   clear: both;
+  text-align: center;
 }
 
 .header {
@@ -24,14 +25,8 @@
   justify-content: center;
   font-weight: 100;
   font-size: 40px;
+  text-align: center;
 }
-
-/* .home-content {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-/* align-items: center;
-} */
 
 h1,
 h2,
