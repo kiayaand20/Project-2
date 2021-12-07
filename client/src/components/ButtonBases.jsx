@@ -106,6 +106,7 @@ export default function ButtonBases() {
           key={image.title}
           style={{
             width: image.width,
+
           }}
           >
           <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
