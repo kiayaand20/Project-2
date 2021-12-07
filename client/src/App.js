@@ -26,10 +26,8 @@ function App() {
   }, [toggle])
 
   return (
-    <div>
-      <div className="header-main">
-        <Header />
-      </div>
+    <div className="body">
+      <Header />
       <Routes>
         <Route
           path="/"

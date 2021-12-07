@@ -1,3 +1,9 @@
+.body {
+  min-height: 400px;
+  margin-bottom: 100px;
+  clear: both;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -99,4 +105,5 @@ h5 {
   justify-content: space-around;
   font-family: "Roboto", sans-serif;
   align-items: center;
+  height: 50px;
 }
