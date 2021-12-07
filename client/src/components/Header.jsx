@@ -4,7 +4,7 @@ function Header(props) {
   return (
       <div className="header">
         <Link to='/' className="home">Home</Link>
-        <label className="title">Whatever the Weather</label>
+        <label className="title" style={{ marginLeft: '23rem' }}>Whatever the Weather</label>
       </div>
   )
 }
