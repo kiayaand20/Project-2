@@ -26,9 +26,9 @@ const images = [
   },
   {
     url: 'https://res.cloudinary.com/kacloud20/image/upload/v1638887666/Project%202/leaves_tpd6xk.webp',
-    title: 'FALL',
+    title: 'AUTUMN',
     width: '50%',
-    season: "fall"
+    season: "AUTUMN"
   },
 ];
 
