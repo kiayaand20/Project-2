@@ -51,7 +51,9 @@ function App() {
           path="/activity/add"
           element={<Form activity={activity} setToggle={setToggle} />} />
       </Routes>
-      <Footer />
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 }

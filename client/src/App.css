@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   padding: 20px;
-  height: 5px;
+  /* height: 10px; */
   background-color: rgb(206, 250, 247);
   font-family: "Roboto", sans-serif;
 }
@@ -64,13 +64,14 @@ h5 {
   text-align: center;
 }
 
-/* .autumn-form,
-.spring-form,
-.summer-form,
-.winter-form {
+.home-intro {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-} */
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
 
 .form {
   display: flex;
@@ -87,10 +88,15 @@ h5 {
 }
 
 .footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: rgb(206, 250, 247);
+}
+
+.footer-info {
   display: flex;
   justify-content: space-around;
-  bottom: 0;
-  width: 100%;
-  background: rgb(206, 250, 247);
   font-family: "Roboto", sans-serif;
+  align-items: center;
 }

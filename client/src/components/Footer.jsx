@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <div className="footer">
+      <div className="footer-info">
         <label className="footer-name">&copy; Kiaya Anderson</label>
         <div className="icons">
           <a href="http://github.com">
