@@ -37,7 +37,7 @@ export default function Form(props) {
       <h3>Complete the form below:</h3>
     <form className="form" onSubmit={handleSubmit}>
       <select onChange={(e) => setSeason(e.target.value)}>
-        <option disabled selected>
+        <option disabled value>
           Select a Season
         </option>
         

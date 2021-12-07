@@ -36,11 +36,11 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
   height: 200,
   [theme.breakpoints.down('sm')]: {
-    width: '100% !important', // Overrides inline-style
+    width: '100% !important', 
     height: 200,
   },
-  '&:hover, &.Mui-focusVisible': {
-    zIndex: 1,
+    '&:hover, &.Mui-focusVisible': {
+      zIndex: 1,
     '& .MuiImageBackdrop-root': {
       opacity: 0.15,
     },
@@ -106,7 +106,6 @@ export default function ButtonBases() {
           key={image.title}
           style={{
             width: image.width,
-
           }}
           >
           <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
@@ -116,7 +115,7 @@ export default function ButtonBases() {
             <Typography
               component="span"
               variant="subtitle1"
-              color="inherit"
+                color="inherit"
               sx={{
                 position: 'relative',
                 p: 4,

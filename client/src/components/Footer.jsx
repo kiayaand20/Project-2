@@ -2,7 +2,7 @@ function Footer() {
   return (
     <>
       <div className="footer">
-        <h4 className="footer-name">&copy; Kiaya Anderson</h4>
+        <label className="footer-name">&copy; Kiaya Anderson</label>
         <div className="icons">
           <a href="http://github.com">
           <img src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png" alt="GitHub"
@@ -11,7 +11,7 @@ function Footer() {
           <img src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png" alt="LinkedIn"
               target="_blank" height="30px" /></a>
         </div>
-        <h5>Images from: <em>www.pixabay.com</em> </h5>
+        <label className="img-src">Images from: <em><strong>www.pixabay.com</strong></em> </label>
       </div >
     </>
   )

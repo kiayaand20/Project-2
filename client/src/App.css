@@ -3,13 +3,21 @@
   align-items: center;
   padding: 20px;
   height: 5px;
-  background-color: rgb(250, 240, 227);
-  font-family: "Cormorant", serif;
+  background-color: rgb(206, 250, 247);
+  font-family: "Roboto", sans-serif;
+}
+.home {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 24px;
+  color: black;
 }
 
 .title {
   display: flex;
   justify-content: center;
+  font-weight: 100;
+  font-size: 40px;
 }
 
 h1,
@@ -27,6 +35,23 @@ h4 {
   padding: 100px;
 }
 
+.pg-titles {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.add-link,
+.pg-sentence {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .footer-name {
   text-align: left;
 }
@@ -39,13 +64,13 @@ h5 {
   text-align: center;
 }
 
-.autumn-form,
+/* .autumn-form,
 .spring-form,
 .summer-form,
 .winter-form {
   display: flex;
   justify-content: center;
-}
+} */
 
 .form {
   display: flex;
@@ -66,5 +91,6 @@ h5 {
   justify-content: space-around;
   bottom: 0;
   width: 100%;
-  background: rgb(250, 240, 227);
+  background: rgb(206, 250, 247);
+  font-family: "Roboto", sans-serif;
 }

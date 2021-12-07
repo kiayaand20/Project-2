@@ -5,25 +5,32 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Grid from '@material-ui/core/Grid';
+import { Link } from 'react-router-dom'
+// Resource for making cards with Material UI: 
+// https://www.pluralsight.com/guides/styling-a-react-app-with-material-ui
 
 function Summer(props) {
   return (
     <div>
-      <label>Summer Activities</label>
-      <label className="summer-form"> Have an activity idea you think 
-        others will enjoy? Add it to the list! </label>
+      <label className="pg-titles">Summer Activities</label>
+      <br />
+      <label className="pg-sentence"> <em>Have an activity idea you think
+          others will enjoy? </em></label>
+      <Link to='/activity/add' style={{  textDecoration: 'underline', color: 'black' }}> 
+          <label className="add-link">Click here to add it to the list!</label>
+      </Link>
         <Grid container 
             spacing={0}
             direction="row"
             alignItems="center"
-            justify="center"
+            justifyContent="center"
             style={{ minHeight: '100vh' }}
               >
           {
             props.activity.map((activity) => (
               activity.fields.season === "Summer" ?
             
-            <Grid item>
+            <Grid item key={activity.id}>
               <Card sx={{
                 maxWidth: 350,
                 height: 375,
