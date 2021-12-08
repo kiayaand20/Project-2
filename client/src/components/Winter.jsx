@@ -15,8 +15,7 @@ function Winter(props) {
       <label className="pg-titles">Winter Activities</label>
       <br />
       <label className="winter-desc">The sunshine has mostly disappeared and the
-        leaves have fallen off the trees, but this doesn't mean the fun needs to stop.
-        <br />Check out some exciting Winter activities below:</label>
+        leaves have fallen off the trees, but this doesn't mean the fun needs to stop ❄️</label>
       <br />
         <Grid container 
             spacing={0}
@@ -56,10 +55,11 @@ function Winter(props) {
           ))}
       </Grid>
       <br />
-      <label className="pg-sentence"> <em>Have an activity idea you think
-          others will enjoy? </em></label>
+      <label className="add-link1"> <em>Have an activity idea you think
+        others will enjoy? </em></label>
+      <br />
       <Link to='/add/Winter' style={{  textDecoration: 'underline', color: 'black' }}> 
-          <label className="add-link">Click here to add it to the list!</label>
+          <label className="add-link2"><strong>Click here to add it to the list!</strong></label>
       </Link>
     </div>
   )

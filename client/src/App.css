@@ -51,20 +51,20 @@ h4 {
   letter-spacing: 3px;
 }
 
-.add-link,
-.pg-sentence {
+.add-link1,
+.add-link2 {
   display: flex;
   justify-content: center;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 400;
-}
-
-.add-link {
   text-align: center;
 }
 
-.winter-desc {
+.winter-desc,
+.summer-desc,
+.spring-desc,
+.autumn-desc {
   display: flex;
   justify-content: center;
   font-family: "Roboto", sans-serif;
@@ -72,6 +72,8 @@ h4 {
   font-weight: 400;
   border: solid rgb(206, 250, 247);
   padding: 10px;
+  width: 45%;
+  margin: 0px auto;
 }
 
 .footer-name {

@@ -14,11 +14,8 @@ function Summer(props) {
     <div>
       <label className="pg-titles">Summer Activities</label>
       <br />
-      <label className="pg-sentence"> <em>Have an activity idea you think
-          others will enjoy? </em></label>
-      <Link to='/add/Summer' style={{  textDecoration: 'underline', color: 'black' }}> 
-          <label className="add-link">Click here to add it to the list!</label>
-      </Link>
+      <label className="summer-desc">Sun-filled, warm-breeze days can only mean one thing...
+       <br />Summer has arrived! Get out and get moving! ☀️</label>
       <br />
         <Grid container 
             spacing={0}
@@ -56,7 +53,13 @@ function Summer(props) {
               :
               null
           ))}
-        </Grid>
+      </Grid>
+      <label className="add-link1"> <em>Have an activity idea you think
+        others will enjoy? </em></label>
+      <br />
+      <Link to='/add/Summer' style={{  textDecoration: 'underline', color: 'black' }}> 
+          <label className="add-link2"><strong>Click here to add it to the list!</strong></label>
+      </Link>
     </div>
   )
             

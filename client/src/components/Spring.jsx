@@ -14,11 +14,8 @@ function Spring(props) {
     <div>
       <label className="pg-titles">Spring Activities</label>
       <br />
-      <label className="pg-sentence"> <em>Have an activity idea you think
-          others will enjoy? </em></label>
-      <Link to='/add/Spring' style={{  textDecoration: 'underline', color: 'black' }}> 
-          <label className="add-link">Click here to add it to the list!</label>
-      </Link>
+      <label className="spring-desc">Spring is a season of growth and new beginnings.<br />
+        It’s the perfect time to try a brand new activity 🌸</label>
       <br />
         <Grid container 
             spacing={0}
@@ -56,7 +53,13 @@ function Spring(props) {
               :
               null
           ))}
-        </Grid>
+      </Grid>
+      <label className="add-link1"> <em>Have an activity idea you think
+        others will enjoy? </em></label>
+      <br />
+      <Link to='/add/Spring' style={{  textDecoration: 'underline', color: 'black' }}> 
+          <label className="add-link2"><strong>Click here to add it to the list!</strong></label>
+      </Link>
     </div>
   )
             
