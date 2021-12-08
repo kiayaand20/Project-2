@@ -1,7 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
-// import { useParams } from 'react-router-dom'
 import { grabActivity } from './services'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -15,7 +14,6 @@ import Form from './components/Form'
 function App() {
   const [activity, setActivity] = useState([])
   const [toggle, setToggle] = useState(false)
-  // const {seasons} = useParams()
 
   useEffect(() => {
     const getActivity = async () => {
