@@ -70,7 +70,7 @@ h4 {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 400;
-  border: solid rgb(206, 250, 247);
+  border: dashed rgb(206, 250, 247);
   padding: 10px;
   width: 45%;
   margin: 0px auto;
@@ -93,8 +93,10 @@ h5 {
   font-size: 24px;
   font-weight: 400;
   padding-top: 5px;
-  padding-left: 80px;
-  padding-right: 80px;
+  width: 45%;
+  margin: 0px auto;
+  border-top: solid rgb(206, 250, 247);
+  border-bottom: solid rgb(206, 250, 247);
 }
 
 .selection {
