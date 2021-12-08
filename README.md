@@ -6,7 +6,7 @@
 
 ## Project Description
 
-<em>Whatever the Weather</em> is an application that allows users to view fun activity ideas based on the season. The user can select a season on the homepage, which will direct them to another page populated with activity names, an image, and a brief description. The user will also be allotted the opportunity to leave a comment describing their favorite seasonal activity. Each comment can be updated and/or deleted.
+<em>Whatever the Weather</em> is an application that allows users to view fun activity ideas based on the season. The user can select a season on the homepage, which will direct them to another page populated with activity names, an image, and a brief description. The user will also be allotted the opportunity to add their favorite seasonal activity.
 
 ## Wireframes
 
@@ -44,21 +44,20 @@
 - Utilize Airtable to build a usable database.
 - Utilize Axios to consume data from Airtable, and GET/render that data in components.
 - Establish home page with clickable season icons that allows users to select an option and get corresponding activity ideas.
-- Allow users to complete a form concerning their favorite activities that can be rendered on the page/updated on Airtable.
+- Create a form that allows users to add their favorite activities that can be rendered on the page/updated on Airtable.
 
 ### PostMVP
 
-- Create and implement a third table in Airtable and render in application.
-- Addition of filter options for users.
+- Addition of filter options for users, such as "kid-friendly" and "price range".
 
 ## Project Schedule
 
 | Day     | Deliverable                                              | Status     |
 | ------- | -------------------------------------------------------- | ---------- |
-| Dec 1   | Wireframes/Priority Matrix/Timeframes                    | Incomplete |
+| Dec 1   | Wireframes/Priority Matrix/Timeframes                    | Complete   |
 | Dec 2-3 | Airtable Setup/Core Application Structure                | Incomplete |
 | Dec 4   | Core Application Structure Completion/Component Creation | Incomplete |
-| Dec 5   | Pseudocode / Actual code                                 | Incomplete |
+| Dec 5   | Coding                                                   | Incomplete |
 | Dec 6   | Coding cont./Initial Clickable Model                     | Incomplete |
 | Dec 7   | MVP/Styling                                              | Incomplete |
 | Dec 8   | Styling cont./Final Application Review                   | Incomplete |
@@ -70,20 +69,19 @@
 | ------------------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Wireframes/Priority Matrix/Timeframes |    H     |      3hrs      |     3hrs      |    3hrs     |
 | Airtable Database                     |    H     |      2hrs      |    2.15hrs    |   2.15hrs   |
-| Core Application Setup                |    H     |      3hrs      |      hrs      |     hrs     |
-| Component Setup                       |    H     |      3hrs      |      hrs      |     hrs     |
-| Clickable Icons (Home page)           |    H     |      2hrs      |      hrs      |     hrs     |
-| Buttons                               |    M     |     1.5hrs     |      hrs      |     hrs     |
-| Working with Images                   |    M     |      3hrs      |      hrs      |     hrs     |
-| Data Rendering                        |    H     |      3hrs      |      hrs      |     hrs     |
-| Form Creation                         |    H     |      3hrs      |      hrs      |     hrs     |
-| Header Styling                        |    M     |     1.5hrs     |      hrs      |     hrs     |
-| Footer Styling                        |    M     |     1.5hrs     |      hrs      |     hrs     |
-| Media Queries                         |    H     |     1.5hrs     |      hrs      |     hrs     |
-| CSS Formatting                        |    M     |      3hrs      |      hrs      |     hrs     |
-| Testing/Debugging                     |    H     |      3hrs      |      hrs      |     hrs     |
-| Pseudocode                            |    M     |      3hrs      |      hrs      |     hrs     |
-| Total                                 |    H     |     37hrs      |      hrs      |     hrs     |
+| Core Application Setup                |    H     |      3hrs      |     2hrs      |    2hrs     |
+| Component Setup                       |    H     |      3hrs      |    3.5hrs     |   3.5hrs    |
+| Clickable Icons (Home page)           |    H     |      2hrs      |    2.5hrs     |   2.5hrs    |
+| Buttons                               |    M     |     1.5hrs     |    1.5hrs     |   1.5hrs    |
+| Working with Images                   |    M     |      3hrs      |     2hrs      |    2hrs     |
+| Data Rendering                        |    H     |      3hrs      |    3.5hrs     |   3.5hrs    |
+| Form Creation                         |    H     |      3hrs      |     2hrs      |    2hrs     |
+| Header Styling                        |    M     |     1.5hrs     |     .5hrs     |    .5hrs    |
+| Footer Styling                        |    M     |     1.5hrs     |      1hr      |     1hr     |
+| Material UI                           |    H     |     1.5hrs     |    2.5hrs     |   2.5hrs    |
+| CSS Formatting                        |    M     |      3hrs      |    3.5hrs     |   3.5hrs    |
+| Testing/Debugging                     |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Total                                 |    H     |     34hrs      |    32.7hrs    |   32.7hrs   |
 
 ## SWOT Analysis
 
