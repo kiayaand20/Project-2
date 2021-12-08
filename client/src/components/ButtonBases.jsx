@@ -100,12 +100,11 @@ const ImageMarked = styled('span')(({ theme }) => ({
 export default function ButtonBases() {
   return (
     <div className="home-img-spc">
-      <label className="home-intro"><strong><em>Whatever the Weather provides
+      <label className="home-intro">Whatever the Weather provides
         a variety of activity ideas for every season. In other words, FUN for the
-        entire year!</em></strong></label>
+        entire year!</label>
       <br />
-      <label className="selection">Start by selecting a season below:
-      </label>
+      <label className="selection">Start by selecting a season below:</label>
       <br />
       <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
       {images.map((image) => (

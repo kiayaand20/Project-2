@@ -26,6 +26,7 @@
   color: black;
   border-style: double;
   padding: 5px;
+  border-radius: 8px;
 }
 
 .title {
@@ -35,6 +36,30 @@
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   letter-spacing: 10px;
+}
+
+.home-intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 10px 10px;
+  width: 45%;
+  margin: 0px auto;
+  border-top: solid rgb(206, 250, 247);
+  border-bottom: solid rgb(206, 250, 247);
+}
+
+.selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .pg-titles {
@@ -72,28 +97,8 @@
   text-align: center;
 }
 
-.home-intro {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  padding-top: 5px;
-  width: 45%;
-  margin: 0px auto;
-  border-top: solid rgb(206, 250, 247);
-  border-bottom: solid rgb(206, 250, 247);
-}
-
-.selection {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 300;
+.add-link {
+  cursor: pointer;
 }
 
 .form-sent1 {
