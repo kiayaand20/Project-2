@@ -57,7 +57,7 @@ function Autumn(props) {
       <label className="add-link1"> <em>Have an activity idea you think
         others will enjoy? </em></label>
       <br />
-      <Link to='/add/Autumn' style={{ color: 'black' }}> 
+      <Link to='/add/Autumn' style={{  textDecoration: 'underline', color: 'black' }}> 
           <label className="add-link2"><strong>Click here to add it to the list!</strong></label>
       </Link>
     </div>
