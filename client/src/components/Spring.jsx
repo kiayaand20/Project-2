@@ -15,7 +15,7 @@ function Spring(props) {
       <label className="pg-titles">Spring Activities</label>
       <br />
       <label className="spring-desc">Spring is a season of growth and new beginnings.<br />
-        It’s the perfect time to try a brand new activity 🍁</label>
+        It’s the perfect time to try a brand new activity 🌸 </label>
       <br />
         <Grid container 
             spacing={0}
