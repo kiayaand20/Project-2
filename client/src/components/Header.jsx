@@ -4,7 +4,9 @@ function Header(props) {
   return (
       <div className="header">
         <Link to='/' className="home">Home</Link>
-      <label className="title">Whatever the Weather</label>
+        <div className="title">
+          <label>Whatever the Weather</label>
+        </div>
       </div>
   )
 }

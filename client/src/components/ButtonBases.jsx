@@ -99,11 +99,10 @@ const ImageMarked = styled('span')(({ theme }) => ({
 
 export default function ButtonBases() {
   return (
-    <div>
-      <label className="home-intro"> Whatever the Weather provides a variety
-        of activity ideas for every season.</label>
-      <label className="home-intro2"> In other words, FUN for the
-        entire year!</label>
+    <div className="home-img-spc">
+      <label className="home-intro"><strong>Whatever the Weather provides a variety
+        of activity ideas for every season. <br />In other words, FUN for the
+        entire year!</strong></label>
       <br />
       <label className="selection">Start by selecting a season below:
       </label>

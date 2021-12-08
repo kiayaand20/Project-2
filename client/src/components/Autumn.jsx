@@ -27,7 +27,7 @@ function Autumn(props) {
             justifyContent="center"
             style={{ minHeight: '100vh' }}
         >
-          {props.activity.fields && 
+          {
             props.activity.map((activity) => (
               activity.fields.season === "Autumn" ?
             

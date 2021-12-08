@@ -33,8 +33,10 @@ export default function Form(props) {
     
   return (
     <div>
-      <h1>Let's create an Activity!</h1>
-      <h3>Complete the form below:</h3>
+      <label className="form-sent1">Let's create an Activity!</label>
+      <br />
+      <label className="form-sent2">Complete the form below:</label>
+      <br />
     <form className="form" onSubmit={handleSubmit}>
       <select onChange={(e) => setSeason(e.target.value)}>
         <option disabled value>
@@ -61,19 +63,22 @@ export default function Form(props) {
       <input
         type='text'
         value={activity}
-        name='activity'
+          name='activity'
+          placeholder='Activity Name'
         onChange={(e) => setActivity(e.target.value)}
       />
       <input
         type='text'
         value={image}
-        name='image'
+          name='image'
+          placeholder='Image url'
         onChange={(e) => setImage(e.target.value)}
       />
       <input
         type='text'
         value={description}
-        name='description'
+          name='description'
+          placeholder='Activity Description'
         onChange={(e) => setDescription(e.target.value)}
       />
       <button>Submit</button>
