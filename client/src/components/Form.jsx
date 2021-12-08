@@ -25,7 +25,7 @@ export default function Form(props) {
 }
     
   return (
-    <div>
+    <div className="form">
       <label className="form-sent1">Let's create an Activity!</label>
       <br />
       <label className="form-sent2">Complete the form below:</label>

@@ -125,25 +125,37 @@ h5 {
   font-weight: 300;
 }
 
+.form {
+  border-radius: 5px;
+  background-image: url("");
+  padding: 20px;
+}
+
 select {
   width: 34.5%;
   padding: 12px 20px;
   border: 2px solid #ccc;
+  border-radius: 7px;
 }
 
 input[type="text"] {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   width: 30%;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 12px 20px;
   border: 2px solid #ccc;
+  border-radius: 7px;
 }
 
 .form-btn {
   background-color: rgb(206, 250, 247);
   padding: 8px 18px;
+  border-radius: 12px;
+}
+
+.form-btn:hover {
+  background-color: rgb(130, 247, 239);
 }
 
 .footer {
