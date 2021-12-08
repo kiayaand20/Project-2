@@ -52,16 +52,16 @@
 
 ## Project Schedule
 
-| Day     | Deliverable                                              | Status     |
-| ------- | -------------------------------------------------------- | ---------- |
-| Dec 1   | Wireframes/Priority Matrix/Timeframes                    | Complete   |
-| Dec 2-3 | Airtable Setup/Core Application Structure                | Incomplete |
-| Dec 4   | Core Application Structure Completion/Component Creation | Incomplete |
-| Dec 5   | Coding                                                   | Incomplete |
-| Dec 6   | Coding cont./Initial Clickable Model                     | Incomplete |
-| Dec 7   | MVP/Styling                                              | Incomplete |
-| Dec 8   | Styling cont./Final Application Review                   | Incomplete |
-| Dec 9   | Presentation                                             | Incomplete |
+| Day     | Deliverable                                              | Status   |
+| ------- | -------------------------------------------------------- | -------- |
+| Dec 1   | Wireframes/Priority Matrix/Timeframes                    | Complete |
+| Dec 2-3 | Airtable Setup/Core Application Structure                | Complete |
+| Dec 4   | Core Application Structure Completion/Component Creation | Complete |
+| Dec 5   | Coding                                                   | Complete |
+| Dec 6   | Coding cont./Initial Clickable Model                     | Complete |
+| Dec 7   | MVP/Styling                                              | Complete |
+| Dec 8   | Styling cont./Final Application Review                   | Complete |
+| Dec 9   | Presentation                                             | Complete |
 
 ## Timeframes
 
