@@ -33,22 +33,19 @@ function App() {
           path="/"
           element={<ButtonBases />} />
         <Route
-          path="/activity/:seasons"
-          element={`<${seasons} />`} />
-        <Route
-          path="/activity/spring"
+          path="/activity/Spring"
           element={<Spring activity={activity} setToggle={setToggle}/>} />
         <Route
-          path="/activity/summer"
+          path="/activity/Summer"
           element={<Summer activity={activity} setToggle={setToggle}/>} />
         <Route
-          path="/activity/autumn"
+          path="/activity/Autumn"
           element={<Autumn activity={activity} setToggle={setToggle} />} />
         <Route
-          path="/activity/winter"
+          path="/activity/Winter"
           element={<Winter activity={activity} setToggle={setToggle} />} />
         <Route
-          path="/activity/add"
+          path="/add/:currentSeason"
           element={<Form activity={activity} setToggle={setToggle} />} />
       </Routes>
       <div className="footer">

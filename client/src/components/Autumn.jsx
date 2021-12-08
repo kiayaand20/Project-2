@@ -16,7 +16,7 @@ function Autumn(props) {
       <br />
       <label className="pg-sentence"> <em>Have an activity idea you think
           others will enjoy? </em></label>
-      <Link to='/activity/add' style={{  textDecoration: 'underline', color: 'black' }}> 
+      <Link to='/add/Autumn' style={{  textDecoration: 'underline', color: 'black' }}> 
           <label className="add-link">Click here to add it to the list!</label>
       </Link>
       <br />

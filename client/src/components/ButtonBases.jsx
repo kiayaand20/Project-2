@@ -10,25 +10,25 @@ const images = [
     url: 'https://res.cloudinary.com/kacloud20/image/upload/v1638887664/Project%202/snow_lmjxdw.webp',
     title: 'WINTER',
     width: '50%',
-    season: "winter"
+    season: "Winter"
   },
   {
     url: 'https://res.cloudinary.com/kacloud20/image/upload/v1638826053/Project%202/test_z0wh65.jpg',
     title: 'SPRING',
     width: '50%',
-    season: "spring"
+    season: "Spring"
   },
   {
     url: 'https://res.cloudinary.com/kacloud20/image/upload/v1638887664/Project%202/palm_ersz3g.webp',
     title: 'SUMMER',
     width: '50%',
-    season: "summer"
+    season: "Summer"
   },
   {
     url: 'https://res.cloudinary.com/kacloud20/image/upload/v1638887666/Project%202/leaves_tpd6xk.webp',
     title: 'AUTUMN',
     width: '50%',
-    season: "autumn"
+    season: "Autumn"
   },
 ];
 

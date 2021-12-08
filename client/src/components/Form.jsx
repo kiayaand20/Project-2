@@ -1,21 +1,14 @@
-import { useState, useEffect} from 'react'
+import { useState} from 'react'
 import { postActivity } from '../services'
 import { useNavigate, useParams } from 'react-router-dom'
 
 export default function Form(props) {
-  const [season, setSeason] = useState('')
+  const {currentSeason} = useParams()
+  const [season, setSeason] = useState(currentSeason)
   const [activity, setActivity] = useState('')
   const [description, setDescription] = useState('')
   const [image, setImage] = useState('')
   const navigate = useNavigate()
-  const {seasons} = useParams()
-
-  useEffect(() => {
-      const searchSeason= props.activity.find(activity=> {
-        return activity.fields.season === seasons
-      })
-    setSeason(searchSeason)
-  }, [seasons, props.activity])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -39,7 +32,7 @@ export default function Form(props) {
       <br />
     <form className="form" onSubmit={handleSubmit}>
       <select onChange={(e) => setSeason(e.target.value)}>
-        <option disabled value>
+        <option disabled selected value=''>
           Select a Season
         </option>
         
