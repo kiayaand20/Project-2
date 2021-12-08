@@ -51,16 +51,6 @@ h4 {
   letter-spacing: 3px;
 }
 
-.add-link1,
-.add-link2 {
-  display: flex;
-  justify-content: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  text-align: center;
-}
-
 .winter-desc,
 .summer-desc,
 .spring-desc,
@@ -76,8 +66,14 @@ h4 {
   margin: 0px auto;
 }
 
-.footer-name {
-  text-align: left;
+.add-link1,
+.add-link2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
 }
 
 h5 {
@@ -108,11 +104,6 @@ h5 {
   font-weight: 300;
 }
 
-.form {
-  display: flex;
-  justify-content: center;
-}
-
 .form-sent1 {
   display: flex;
   flex-wrap: wrap;
@@ -134,13 +125,25 @@ h5 {
   font-weight: 300;
 }
 
-.icons {
+select {
+  width: 34.5%;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+}
+
+input[type="text"] {
   display: flex;
-  align-items: flex-end;
   justify-content: center;
-  flex-direction: row;
-  height: 40px;
-  padding: 10px;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+}
+
+.form-btn {
+  background-color: rgb(206, 250, 247);
+  padding: 8px 18px;
 }
 
 .footer {
@@ -148,6 +151,19 @@ h5 {
   width: 100%;
   bottom: 0;
   background: rgb(206, 250, 247);
+}
+
+.footer-name {
+  text-align: left;
+}
+
+.icons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+  height: 40px;
+  padding: 10px;
 }
 
 .footer-info {

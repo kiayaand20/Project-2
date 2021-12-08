@@ -30,7 +30,7 @@ export default function Form(props) {
       <br />
       <label className="form-sent2">Complete the form below:</label>
       <br />
-    <form className="form" onSubmit={handleSubmit}>
+    <form className="form-boxes" onSubmit={handleSubmit}>
       <select onChange={(e) => setSeason(e.target.value)}>
         <option disabled selected value=''>
           Select a Season
@@ -74,7 +74,7 @@ export default function Form(props) {
           placeholder='Activity Description'
         onChange={(e) => setDescription(e.target.value)}
       />
-      <button>Submit</button>
+      <button className="form-btn">Submit</button>
       </form>
     </div>
   )
